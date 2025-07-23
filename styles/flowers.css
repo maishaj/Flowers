@@ -22,6 +22,17 @@ body{
   font-variation-settings:
     "wdth" 100;
 }
+.btn-primary{
+   width:16.87rem;
+   height:3.1rem;
+   background-color: #E95A08;
+   color:#FFFFFF;
+   padding:1rem 3.1rem;
+   font-size: 1rem;
+   font-weight: 600;
+   border: none;
+   text-align: center;
+  }
 
 /* header styles */
 .header-container{
@@ -68,6 +79,42 @@ body{
   font-size: 1.37rem;
   font-weight: normal;
   color:rgb(0, 0, 0,0.5);
+}
+
+/* card section styles */
+.card-section{
+  text-align: center;
+}
+.card-section h3{
+  font-weight: bold;
+  font-size: 3.1rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.card-section p{
+  font-size: normal;
+  font-size: 1.37rem;
+  color:rgb(0, 0, 0,0.5);
+  margin-bottom: 3.06rem;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  align-items: center;
+  gap:1.87rem
+}
+.card h4{
+  font-weight: bold;
+  font-size: 1.37rem;
+  color:#111111;
+  margin-bottom: 1.87rem;
+}
+.card h5{
+  font-weight: normal;
+  font-size: 1.37rem;
+  color:#111111;
+  margin-bottom: 1.25rem;
 }
 
 @media screen and (max-width:576px) {
