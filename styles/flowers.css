@@ -236,17 +236,17 @@ body{
 .img-a h4, .img-b h4{
   position: relative;
   top:50px;
-  left:70px;
+  left:80px;
 }
 .img-a a, .img-b a{
   position: relative;
   top:50px;
-  left:140px;
+  left:150px;
 }
 .img-c h4{
   position: relative;
   top:150px;
-  left:200px;
+  left:210px;
 }
 .img-c a{
   position: relative;
@@ -354,6 +354,7 @@ body{
     }
     .lover-img-1{
       max-width: 152%;
+      padding:10%;
     }
     .lover-logo{
       visibility: hidden;
@@ -367,6 +368,7 @@ body{
     }
     .latest-deals-container{
       grid-template-columns: repeat(1,1fr);
+      padding: 8%;
     }
     /* join section */
 
