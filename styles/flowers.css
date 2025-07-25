@@ -5,6 +5,7 @@
 }
 body{
     max-width: 1440px;
+    width:100%;
     margin:0 auto;
     padding: 0;
 }
@@ -40,7 +41,8 @@ body{
   justify-content:space-between;
   align-items: center;
   margin: 1.8rem auto;
-  max-width: 80%;
+  width: 80%;
+  max-width:71.25rem;
 }
 .nav-links{
   display: flex;
@@ -56,11 +58,11 @@ body{
 
 /* banner styles */
 .banner{
-  max-width: 80%;
+  width: 80%;
+  max-width:71.25rem;
   display: grid;
   justify-content:center;
   align-items: center;
-  /* gap: 15rem; */
   grid-template-columns: repeat(2,1fr);
   margin:7.5rem 9.3rem;
 }
@@ -88,17 +90,18 @@ body{
 /* card section styles */
 .card-section{
   text-align: center;
-  max-width: 80%;
-  margin:5rem auto;
+  width: 80%;
+  max-width: 71.25rem;
+  margin:2rem auto;
 }
 .card{
   max-width: 100%;
 }
 .card-desc{
-   max-width: 100%;
+   width:100%;
 }
 .card img{
-  max-width: 100%;
+  width: 100%;
 }
 .card-section h3{
   font-weight: bold;
@@ -135,7 +138,8 @@ body{
 
 /* flower lover styles */
 .lover{
-   max-width:80%;
+   width:80%;
+   max-width: 71.25rem;
    display:flex;
    justify-content: center;
    margin:0 auto;
@@ -169,8 +173,9 @@ body{
 }
 /* latest deals */
 .latest-deals{
-  max-width: 80%;
-  margin: 0 auto;
+  width:80%;
+  max-width: 71.25rem;
+  margin: 2rem auto;
 }
 .latest-deals-title{
   text-align: center;
@@ -191,20 +196,20 @@ body{
   grid-template-columns: repeat(2,1fr);
 }
 .img-a{
-  background: url(../images/deal-bloom.png);
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/deal-bloom.png);
   width:367px;
   height:201px;
   border-radius: 14px;
 }
 .img-b{
   background-image: linear-gradient;
-  background: url(../images/deal-ana.png);
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/deal-ana.png);
   width:367px;
   height:201px;
   border-radius: 14px;
 }
 .img-c{
-  background:url(../images/deal-zabo.png);
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/deal-zabo.png);
   width:753px;
   height:423px;
   border-radius: 14px;
@@ -220,7 +225,7 @@ body{
   color:#FFFFFF;
 }
 .img-c h4{
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   color:#FFFFFF;
 }
@@ -241,8 +246,8 @@ body{
 }
 .img-c h4{
   position: relative;
-  top:190px;
-  left:160px;
+  top:150px;
+  left:200px;
 }
 .img-c a{
   position: relative;
@@ -250,34 +255,40 @@ body{
   left:280px;
 }
 /* join section */
-.join-section{
-   background: url(../images/news-letter-bg.png);
-   max-width: 100%;
-   height:533px;
-}
-.join-section h3{
-   font-size: 3.1rem;
-   font-weight: bold;
+ .join-section{
+    width:1140px;
+    max-width:100%;
+    height:33rem;
+    background: url(../images/news-letter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+ }
+ .join-section h3{
+   font-size: 3rem;
    color:#FFFFFF;
-   position:relative;
-   top:200px;
-   left:400px;
-}
-form{
-  position: absolute;
-}
-input[type=email]{
-  width:37.5rem;
-  height: 3.1rem;
-  position:relative;
-  top:300px;
-  left:300px;
-}
-.subscribe{
-  position:relative;
-  top:300px;
-  left:300px;
-}
+   font-weight: bold;
+ }
+ form{
+   width: 100%;
+ }
+ .join-section input[type="email"]{
+   width: 100%;
+   max-width:40.6rem;
+   height:2.8rem;
+ }
+ .join-section button{
+   width: 100%;
+   max-width:11rem;
+   height:2.8rem;
+   padding:10px 10px;
+ }
 
 /* footer styles */
 .footer-section{
@@ -312,8 +323,6 @@ input[type=email]{
     }
     .banner{
     grid-template-columns: repeat(1,0.5fr);
-    gap:1rem;
-    margin-bottom: 1rem;
     }
     .banner h3{
       font-size: 2rem;
@@ -323,17 +332,13 @@ input[type=email]{
     }
     .banner-desc{
       order: 2;
-      width:70%;
-      padding-left: 20%;
     }
     .banner-img{
-      padding-left: 2.5%;
       order: 1;
     }
     .card-container{
       grid-template-columns: repeat(2,1fr);
       justify-content: start;
-      column-gap: 0;
     }
     .card button, .card{
       max-width: 70%;
@@ -342,7 +347,7 @@ input[type=email]{
       padding:10px 10px;
     }
     .card-desc{
-      
+       margin-left: 30%;
     }
     .lover{
     flex-direction: column;
@@ -356,6 +361,7 @@ input[type=email]{
     .lover-desc{
       width:152%;
       margin-bottom: 1rem;
+      text-align: justify;
     }
     .lover-img-1{
       max-width: 152%;
@@ -363,32 +369,30 @@ input[type=email]{
     .lover-logo{
       visibility: hidden;
     }
+    .latest-deals-desc{
+       margin-left: 15%;
+    }
+    .latest-deals-title{
+       font-size: 2.5em;
+       margin-left: 12%;
+    }
     .latest-deals-container{
       grid-template-columns: repeat(1,1fr);
     }
     .join-section{
-       max-width:120%;
+       width:393px;
+       height: 273px;
     }
     .join-section h3{
-      font-size: 2rem;
-      top:200px;
-      left:100px;
+      font-size: 1.5rem;
     }
-     input[type=email]{
-      width:13rem;
-      height: 3.1rem;
-      top:300px;
-      left:50px;
-      font-size: 1rem;
+    .join-section input[type="email"], .join-section button{
+        width: 13.6rem;
+        height: 2rem;
+        font-size: 1rem;
     }
-    .join-section button{
-       width:6.4rem;
-       height: 3.1rem;
-       top:300px;
-       left:50px;
-       font-size: 1rem;
-       padding:10px 10px;
-    }
+
+
     .footer-section{
       flex-direction: column;
       gap:0rem;
