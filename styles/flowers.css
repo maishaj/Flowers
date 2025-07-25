@@ -90,6 +90,12 @@ body{
   max-width: 100%;
   margin:5rem auto;
 }
+.card{
+  max-width: 100%;
+}
+.card img{
+  max-width: 100%;
+}
 .card-section h3{
   font-weight: bold;
   font-size: 3.1rem;
@@ -318,9 +324,15 @@ input[type=email]{
     }
     .card-container{
       grid-template-columns: repeat(2,1fr);
-      max-width: 60%;
       justify-content: start;
-      /* padding: 10%; */
+      column-gap:0px;
+      padding-left: 0.43rem;
+    }
+    .card button, .card{
+      max-width: 75%;
+    }
+    .card button{
+      padding:10px 10px;
     }
     .lover{
     flex-direction: column;
